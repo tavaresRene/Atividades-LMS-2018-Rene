@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.logo img{
+    height: 50px;
+}
+.frase{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    float: right;
+    display: block;
+    padding-top: 20px;
+    padding-right: 20px;
+
+}
+.navegador-superior{
+    background-color:#4CAF50;
+    overflow: hidden;
+}
+.navegador-superior ul {
+    list-style-type: none;
+}
+.navegador-superior ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    float: left;
+    padding: 20px;
+}
+.navegador-superior ul li h3 {
+    color: black;
+    padding: 20px;
+}
+
+.navegador-superior ul li a:hover, .dropdown .dropdown-button:hover, .dropdown:hover .dropdown-button{
+    background-color:white;
+    color: black;
+}
+.dropdown{
+    float: left;
+}
+.dropdown .dropdown-button{
+    padding: 20px;
+    cursor: pointer;
+    color: white;
+}
+.dropdown .dropdown-content{
+    position: absolute;
+    background-color:#f1f1f1;
+    display: none;
+
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.dropdown .dropdown-content{
+    color: black;
+}
+
+.barra-lateral{
+    width: 15%;
+    height: 100%;
+    background-color: #f1f1f1;
+}
+.barra-lateral ul{
+    text-decoration-style: none;
+}
+.barra-lateral ul li a, .barra-lateral ul li h3{
+    padding: 10px;
+    text-decoration: none;
+}
