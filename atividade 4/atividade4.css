@@ -21,7 +21,7 @@
 .navegador-superior ul {
     list-style-type: none;
 }
-.navegador-superior ul li a {
+.navegador-superior > ul > li > a {
     text-decoration: none;
     color: white;
     display: block;
@@ -33,12 +33,18 @@
     padding: 20px;
 }
 
-.navegador-superior ul li a:hover, .dropdown .dropdown-button:hover, .dropdown:hover .dropdown-button{
+.navegador-superior ul li a:hover, .dropdown .dropdown-button:hover{
     background-color:white;
     color: black;
 }
 .dropdown{
     float: left;
+}
+.dropdown-content > ul > li > a{
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+    text-align: center;
 }
 .dropdown .dropdown-button{
     padding: 20px;
@@ -49,7 +55,6 @@
     position: absolute;
     background-color:#f1f1f1;
     display: none;
-
 }
 .dropdown:hover .dropdown-content{
     display: block;
@@ -61,13 +66,15 @@
 
 .barra-lateral{
     width: 15%;
-    height: 100%;
+    height: calc(100vh - 102px);
     background-color: #f1f1f1;
 }
 .barra-lateral ul{
     text-decoration-style: none;
+    list-style-type: none;
 }
 .barra-lateral ul li a, .barra-lateral ul li h3{
     padding: 10px;
     text-decoration: none;
+    display: block;
 }

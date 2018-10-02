@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.logo{
+    background-color: black;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.4);
+    position: relative;
+    z-index: 110;
+}
+.logo img{
+    display: block;
+    height: 50px;
+    padding: 10px;
+    margin: auto;
+}
+.barrasuperior{
+    background-color:#FFB000;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.4);
+}
+.barrasuperior ul {
+    list-style-type: none;
+}
+.dropdown-content > ul > li > a, .dropdown .dropdown-buttom{
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+.dropdown .dropdown-content{
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 500ms;
+}
+.dropdown .dropdown-buttom{
+    cursor: pointer;
+}
+.dropdown:hover .dropdown-content{
+    max-height: 174px;
+}
+.barrasuperior ul li a:hover, .dropdown .dropdown-buttom:hover{
+    background-color:rgba(177, 121, 0, 0.432);
+}
+.container{
+    position: relative;
+    z-index: -70;
+    height: calc(100vh + 498px);
+    box-shadow: 0px 1px rgba(0,0,0,0.4);
+    /*background-color: rgb(242, 207, 13);*/
+}
+.barra-lateral-esquerda{
+    background-color: rgb(124, 180, 27);
+    /*position: relative;
+    z-index: -70;*/
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.4);
+}
+.barra-lateral-esquerda ul {
+    list-style-type: none;
+}
+.barra-lateral-esquerda > ul > li > a, .barra-lateral-esquerda > h3{
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+    color: white;
+    text-align: center;
+}
+.conteudo{
+    position: relative;
+    padding: 10px;
+    height: 100vh;
+    width: 100vh;
+}
+.gif img{
+    height: 150px;
+    display: block;
+    border: #FFB000 solid 2px;
+    animation-name: gandalfgif;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes gandalfgif{
+    0%{
+        transform:translate(0px,0px)
+    }
+    25%{
+        transform: translate(0px,400px)
+    }
+    50%{
+        transform: translate(220px,400px)
+    }
+    75%{
+        transform: translate(220px,0px)
+    }
+    100%{
+        transform: translate(0px,0px)
+    }
+}
+.barra-lateral-direita{
+    background: linear-gradient( rgb(23, 132, 221) , rgb(128, 13, 163));
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    box-shadow: -2px 2px 10px rgba(0,0,0,0.4);
+}
+.barra-lateral-direita p {
+    color: white;
+}
+.barra-lateral-direita p, .barra-lateral-direita h3 {
+    text-align: center;
+}
+.barra-lateral-direita img{
+    height: 70px;
+    display: block;
+    margin: auto;
+    padding: 10px;
+}
+.footer{
+    position: relative;
+    background-color: orange;
+    padding: 20px;
+    z-index: -90;
+}
+@media screen and (min-width:600px){
+    .logo img {
+        height: 100px;
+    }
+    .barrasuperior{
+        overflow: hidden;
+    }
+    .dropdown{
+        float: left;
+    }
+    .dropdown .dropdown-content{
+        overflow: hidden;
+        position: absolute;
+        background-color: #FFB000;
+        max-height: 0px;
+        transition: max-height 500ms ;
+    }
+    .dropdown:hover .dropdown-content{
+        max-height: 174px;
+    }
+    .barra-lateral-esquerda{
+        float: left;
+        width: 20%;
+        height: 100vh;
+    }
+    .conteudo{
+        float: left;
+        width: 50vw;
+        height: 100vh;
+    }
+    @keyframes gandalfgif{
+        0%{
+            transform:translate(0px,0px)
+        }
+        25%{
+            transform: translate(0px,400px)
+        }
+        50%{
+            transform: translate(180px,400px)
+        }
+        75%{
+            transform: translate(180px,0px)
+        }
+        100%{
+            transform: translate(0px,0px)
+        }
+    }
+    .barra-lateral-direita{
+        position: relative;
+        float: right;
+        height: 100vh;
+        width:20%;
+    }
+}
